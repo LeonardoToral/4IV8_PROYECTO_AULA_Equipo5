@@ -78,4 +78,5 @@ function validar(formulario){
     }
     return b.test(txt);
 
+    
 }
