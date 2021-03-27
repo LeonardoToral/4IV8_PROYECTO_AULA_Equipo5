@@ -9,24 +9,45 @@
     <script language="JavaScript" type="text/JavaScript" src="./JS/formulario.js"></script>
 </head>
 <body>
-    <div class="contacto">
-        <form method="GET" name="contacto" onsumbit="return validar(this)" action="contacto.html">
-            
-            <h4>Nombre:</h4>
-            <input type="text" name="nombre" size="20">
-            <h4>Teléfono:</h4>
-            <input type="text" name="telefono" size="20">
-            <h4>Email:</h4>
-            <input type="text" name="email" size="30">
-            <h4>Mensaje:</h4>
-            <input type="text" name="mensaje" size="100">
-            <br>
-            <input type="submit" name="enviar" value="Enviar datos">
-            <input type="reset" value="Borrar formulario" name="Borrar">
-            <br>
-            <a href="index.html" style="color: rgb(5, 80, 16);">Pagina principal</a>
-    
-        </form>
+
+    <div class="principal-container">
+
+        <div class="principal_logo">
+            <p>
+                <img src="./Imagenes/logo.png">
+            </p>
+        </div>
+
+        <div class="contacto">
+            <form method="GET" name="contacto" onsumbit="return validar(this)" action="contacto.html">
+                
+                <h4>Nombre:</h4>
+                <input type="text" name="nombre" size="20">
+                <h4>Teléfono:</h4>
+                <input type="text" name="telefono" size="20">
+                <h4>Email:</h4>
+                <input type="text" name="email" size="30">
+                <h4>Mensaje:</h4>
+                <input type="text" name="mensaje" size="100">
+                <br>
+                <input type="submit" name="enviar" value="Enviar datos">
+                <input type="reset" value="Borrar formulario" name="Borrar">
+                <br>
+                <a href="index.html" style="color: rgb(5, 80, 16);">Pagina principal</a>
+        
+            </form>
+        </div>
+
+        <div class="footer_principal">
+            <footer>
+
+                <p>
+                    <img src="./Imagenes/empresa_logo.png">
+                </p>
+
+            </footer>
+        </div>
     </div>
+
 </body>
 </html>
