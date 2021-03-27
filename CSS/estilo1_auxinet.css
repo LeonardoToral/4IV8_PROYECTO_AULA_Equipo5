@@ -28,14 +28,22 @@ h1{
 
 .principal_logo{
 
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     display: inline-block;
     padding: 10px;
     border-radius: 60px;
 
 
 
+}
+
+
+.principal_logo img{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
 }
 
     /*Index Barra de Navegación */
