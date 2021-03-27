@@ -22,7 +22,7 @@ function validar(formulario){
         }
     }
     if(!allValid){
-        alert("Nomames solo ponen numeros en el telefono");
+        alert("Solo se aceptan numeros en el campo de telefono");
         formulario.telefono.focus();
         return false;
     }
