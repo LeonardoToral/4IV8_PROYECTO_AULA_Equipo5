@@ -13,6 +13,8 @@ div{
     background-color: #b8b8b8;
     padding: 10px;
     border-radius: 25px;
+    border: 5px solid #000;
+    
 
 
 }
@@ -26,8 +28,8 @@ h1{
 
 .principal_logo{
 
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     display: inline-block;
     padding: 10px;
     border-radius: 60px;
