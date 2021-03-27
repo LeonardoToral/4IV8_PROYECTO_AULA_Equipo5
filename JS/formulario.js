@@ -1,7 +1,7 @@
 function validar(formulario){
-    var check_numbers="0123456789";
+    var checknumbers = "0123456789";
 
-    if(formulario.telefono.value.lenght!=8){
+    if(formulario.telefono.value.length != 10){
         alert("El tamaño del telefono es incorrecto");
         formulario.telefono.focus();
         return false;
@@ -12,7 +12,7 @@ function validar(formulario){
 
     for(var i = 0; i < checkStr.length; i++){
         var ch = checkStr.charAt(i);
-        for( var j = 0; j < checkOk.length; j++)
+        for( var j = 0; j < checknumbers.length; j++)
         if(ch == checknumbers.charAt(j))
             break;
         
@@ -20,6 +20,11 @@ function validar(formulario){
             allValid = false;
             break;
         }
+    }
+    if(!allValid){
+        alert("Nomames solo ponen numeros en el telefono");
+        formulario.telefono.focus();
+        return false;
     }
     var checkname="QWERTYUIOPASDFGHJKLÑZXCVBNM qwertyuiopasdfghjklñzxcvbnm";
     var validname=true;
@@ -66,7 +71,11 @@ function validar(formulario){
     }
     var txt = formulario.email.value;
     var b = /^[^@\s]+@[^@\.\s]+(\.[^@\.\s]+)+$/;
-    alert("Email" + (b.test(txt)?"":" no ") + " valido");
+    if(!b.test(txt)){
+        alert("Email invalido");
+        formulario.email.focus();
+        return false;
+    }
     return b.test(txt);
 
 }
